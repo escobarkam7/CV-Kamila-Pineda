@@ -161,6 +161,8 @@ section img#montañitas_atras
     font-size: 3.5em;
     margin-bottom: 10px;
     color:#eaf8bf;
+    display: flex;
+    justify-content: center;
 }
 
 .sec p
