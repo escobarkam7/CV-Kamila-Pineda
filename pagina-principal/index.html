@@ -26,13 +26,27 @@
             <img src="imagenes/SOL.png" id="solecitoo">
             <img src="imagenes/montañitas_atras.png" id="montañitas_atras">
             <h2 id="text">Sun Light</h2>
-            <a href="#" id="btn">Explore</a>
+            <a href="#sec" id="btn">Explore</a>
             <img src="imagenes/florecitas_adelante.png" id="florecitas_adelante">
         </section>
-        <div class="sec">
+        <div class="sec" id="sec">
             <h2>Parallax Scrolling Effects</h2>
         <p>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br></p>
         </div>
         
+        <script>
+            let nubecitas_sin_fondo = document.getElementById('nubecitas_sin_fondo');
+            let SOL = document.getElementById('solecitoo');
+            let montañitas_atras = document.getElementById('montañitas_atras');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let florecitas_adelante = document.getElementById('florecitas_adelante');
+        
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                nubecitas_sin_fondo.style.left = value + 'px';
+            })
+
+        </script>
 </body>
 </html>
