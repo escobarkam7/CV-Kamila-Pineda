@@ -31,7 +31,7 @@
         </section>
         <div class="sec" id="sec">
             <h2>Parallax Scrolling Effects</h2>
-        <p>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br></p>
+        <p>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br><br><br>Una vez que hemos terminado nuestras modificaciones sobre el código en nuestra rama, debemos commitear los cambios, como se denomina comúnmente, es decir, tenemos que guardar y subir al repositorio remoto nuestros cambios, para que el resto de personas lo tengan disponible.<br><br></p>
         </div>
         
         <script>
@@ -41,16 +41,18 @@
             let text = document.getElementById('text');
             let btn = document.getElementById('btn');
             let florecitas_adelante = document.getElementById('florecitas_adelante');
-        
+            let header = document.querySelector('header');
+
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
                 nubecitas_sin_fondo.style.left = value * 0.25 + 'px';
                 SOL.style.top = value * .5 + 'px';
-                montañitas_atras.style.top = value * 0.5 + 'px';
+                montañitas_atras.style.top = value * .03 + 'px';
                 florecitas_adelante.style.top = value * 0 + 'px';
                 text.style.marginRight = value * 4 + 'px';
                 text.style.marginTop = value * 1.5 + 'px';
                 btn.style.marginTop = value * .8 + 'px';
+                header.style.top= value * 0.5 + 'px';
             })
 
         </script>
