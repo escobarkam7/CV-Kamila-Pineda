@@ -107,12 +107,13 @@ section img#solecitoo
 
 section img#florecitas_adelante
 {
-    z-index: 10;
+    z-index: 9;
     margin-top: 25%;
 }
 
 section img#montañitas_atras
 {
+    z-index: 9;
     margin-top: 20%;
 }
 
