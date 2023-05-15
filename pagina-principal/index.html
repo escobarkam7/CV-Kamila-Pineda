@@ -44,7 +44,12 @@
         
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
-                nubecitas_sin_fondo.style.left = value + 'px';
+                nubecitas_sin_fondo.style.left = value * 0.25 + 'px';
+                SOL.style.top = value * .5 + 'px';
+                montañitas_atras.style.top = value * 0.5 + 'px';
+                florecitas_adelante.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
             })
 
         </script>

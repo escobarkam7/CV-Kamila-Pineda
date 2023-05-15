@@ -120,6 +120,8 @@ section img#montañitas_atras
 #text
 {
     position: absolute;
+    top: 10%;
+    right: -358px;
     color: #eaf8bf;
     white-space: nowrap;
     font-size: 7.5vw; /*tamaño de letra*/
